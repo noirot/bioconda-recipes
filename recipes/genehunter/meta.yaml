@@ -17,12 +17,10 @@ requirements:
   build:
     - gcc   # [not osx]
     - llvm  # [osx]
-    - libgcc  # [linux]
     - zlib {{CONDA_ZLIB}}*
 
   run:
     - libgcc  # [linux]
-    - zlib {{CONDA_ZLIB}}*
 
 test:
   commands:
