@@ -6,7 +6,7 @@
 
 
 # Patch for cc under OSX, return value in non-void function
-perl -0777 -pie 's/\s+num_w_pos = pos_b - pos_a\;\n\s+return\;/\n\tnum_w_pos = pos_b - pos_a\;\n\treturn 0\;/igs' src/newcombo.c
+perl -0777 -i -pe 's/\s+num_w_pos = pos_b - pos_a\;\n\s+return\;/\n\tnum_w_pos = pos_b - pos_a\;\n\treturn 0\;/igs' src/newcombo.c
 
 make
 
