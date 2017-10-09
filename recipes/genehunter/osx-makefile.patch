@@ -1,0 +1,11 @@
+--- Makefile	2017-10-09 10:59:03.917147807 +0200
++++ Makefile	2017-10-09 11:13:50.228226155 +0200
+@@ -9,7 +9,7 @@
+ #SYS= -D_SYS_SOLARIS
+ 
+ #For Mac OS X
+-#SYS= -D_SYS_OSX
++SYS= -D_SYS_OSX
+ 
+ #if above doesnt work, you might try this:
+ #SYS= -D_SYS_$(shell echo `uname | sed -e s/SunOS/SOLARIS/ -e s/Linux/OSF/`)
